@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KhP-kC-yS8">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash" translatesAutoresizingMaskIntoConstraints="NO" id="Jrm-SY-h0T">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Jrm-SY-h0T" firstAttribute="top" secondItem="KhP-kC-yS8" secondAttribute="top" id="DK9-AP-TvP"/>
+                        <constraint firstAttribute="bottom" secondItem="Jrm-SY-h0T" secondAttribute="bottom" id="PTu-st-aV8"/>
+                        <constraint firstItem="Jrm-SY-h0T" firstAttribute="leading" secondItem="KhP-kC-yS8" secondAttribute="leading" id="UBv-Ry-5WO"/>
+                        <constraint firstAttribute="trailing" secondItem="Jrm-SY-h0T" secondAttribute="trailing" id="ngg-TS-WUv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KhP-kC-yS8" secondAttribute="bottom" id="3hV-QS-GAV"/>
+                <constraint firstItem="KhP-kC-yS8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Kdj-uV-B9q"/>
+                <constraint firstAttribute="trailing" secondItem="KhP-kC-yS8" secondAttribute="trailing" id="XmM-j7-aNq"/>
+                <constraint firstItem="KhP-kC-yS8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="snA-K1-wwB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_splash" width="320" height="568"/>
+    </resources>
+</document>

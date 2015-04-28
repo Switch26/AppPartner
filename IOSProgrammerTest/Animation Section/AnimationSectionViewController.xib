@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Jelloween - Machinato ExtraLight.ttf">
+            <string>Machinato-ExtraLight</string>
+            <string>Machinato-ExtraLight</string>
+        </mutableArray>
+        <mutableArray key="Jelloween - Machinato SemiBold Italic.ttf">
+            <string>Machinato-SemiBoldItalic</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimationSectionViewController">
+            <connections>
+                <outlet property="icon" destination="xsL-FU-h6B" id="Bpd-P4-8yN"/>
+                <outlet property="mainView" destination="o3F-Uu-anX" id="pIV-rc-yKm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg_animation" translatesAutoresizingMaskIntoConstraints="NO" id="eXK-Ff-niz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbj-IL-RFt">
+                    <rect key="frame" x="0.0" y="24" width="52" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="52" id="0Jy-VP-M1E"/>
+                        <constraint firstAttribute="height" constant="26" id="okg-4A-494"/>
+                    </constraints>
+                    <state key="normal" image="btn_back">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="smt-Qj-UGc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANIMATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5i-8k-QOI">
+                    <rect key="frame" x="100" y="24" width="121" height="26"/>
+                    <fontDescription key="fontDescription" name="Machinato-ExtraLight" family="Machinato" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3F-Uu-anX">
+                    <rect key="frame" x="32" y="102" width="257" height="325"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bg_cell_animation_test" translatesAutoresizingMaskIntoConstraints="NO" id="5kh-cG-f8Z">
+                            <rect key="frame" x="0.0" y="0.0" width="257" height="325"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87n-Ld-fpf">
+                            <rect key="frame" x="0.0" y="8" width="257" height="92"/>
+                            <string key="text">Animate the App Partner Icon.
+Make it spin around 360 degrees 
+when the spin button is pressed. 
+Allow it to be dragged around the 
+screen by touching and dragging.</string>
+                            <fontDescription key="fontDescription" name="Machinato-ExtraLight" family="Machinato" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BONUS POINTS FOR CREATIVITY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGu-pz-hz7">
+                            <rect key="frame" x="11" y="108" width="236" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="236" id="BKO-CE-auU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Machinato-SemiBoldItalic" family="Machinato" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsL-FU-h6B">
+                            <rect key="frame" x="71" y="179" width="114" height="108"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon_apppartner" translatesAutoresizingMaskIntoConstraints="NO" id="4Qx-Z4-esN">
+                                    <rect key="frame" x="0.0" y="0.0" width="114" height="108"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="4Qx-Z4-esN" secondAttribute="bottom" id="0H2-Cw-Cgi"/>
+                                <constraint firstItem="4Qx-Z4-esN" firstAttribute="top" secondItem="xsL-FU-h6B" secondAttribute="top" id="dR7-4L-kI3"/>
+                                <constraint firstItem="4Qx-Z4-esN" firstAttribute="leading" secondItem="xsL-FU-h6B" secondAttribute="leading" id="paP-xZ-6Z6"/>
+                                <constraint firstAttribute="trailing" secondItem="4Qx-Z4-esN" secondAttribute="trailing" id="tkL-lj-dlQ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="257" id="4Vg-5b-Utv"/>
+                        <constraint firstItem="eGu-pz-hz7" firstAttribute="top" secondItem="87n-Ld-fpf" secondAttribute="bottom" constant="8" id="Ltu-cQ-cMy"/>
+                        <constraint firstAttribute="centerY" secondItem="xsL-FU-h6B" secondAttribute="centerY" constant="-70" id="NAB-KO-64T"/>
+                        <constraint firstItem="87n-Ld-fpf" firstAttribute="top" secondItem="o3F-Uu-anX" secondAttribute="top" constant="8" id="ZdO-eN-3qA"/>
+                        <constraint firstAttribute="centerX" secondItem="xsL-FU-h6B" secondAttribute="centerX" id="b66-rL-56W"/>
+                        <constraint firstAttribute="centerX" secondItem="eGu-pz-hz7" secondAttribute="centerX" id="fWF-Bj-N7f"/>
+                        <constraint firstItem="87n-Ld-fpf" firstAttribute="leading" secondItem="o3F-Uu-anX" secondAttribute="leading" id="fom-3X-72W"/>
+                        <constraint firstAttribute="height" constant="325" id="oQ7-Of-bQJ"/>
+                        <constraint firstAttribute="trailing" secondItem="87n-Ld-fpf" secondAttribute="trailing" id="oei-cu-bA0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0B-gJ-DyI">
+                    <rect key="frame" x="40" y="447" width="241" height="53"/>
+                    <state key="normal" image="btn_spin">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="spinButtonPressed:" destination="-1" eventType="touchUpInside" id="7gf-ej-wWO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Tbj-IL-RFt" firstAttribute="height" secondItem="C5i-8k-QOI" secondAttribute="height" id="0Kg-4r-DGQ"/>
+                <constraint firstAttribute="trailing" secondItem="eXK-Ff-niz" secondAttribute="trailing" id="3UQ-g5-UUf"/>
+                <constraint firstAttribute="centerX" secondItem="q0B-gJ-DyI" secondAttribute="centerX" id="Azf-pr-3Hq"/>
+                <constraint firstAttribute="centerX" secondItem="o3F-Uu-anX" secondAttribute="centerX" id="CQd-j5-wIe"/>
+                <constraint firstItem="Tbj-IL-RFt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HZq-bg-0FM"/>
+                <constraint firstItem="eXK-Ff-niz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bS5-QN-QjO"/>
+                <constraint firstItem="Tbj-IL-RFt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="dsB-G1-IM2"/>
+                <constraint firstAttribute="bottom" secondItem="eXK-Ff-niz" secondAttribute="bottom" id="hxL-QV-Tws"/>
+                <constraint firstItem="C5i-8k-QOI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="lDt-sa-NdP"/>
+                <constraint firstAttribute="centerX" secondItem="C5i-8k-QOI" secondAttribute="centerX" id="qnC-6u-U0x"/>
+                <constraint firstItem="eXK-Ff-niz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vit-B4-5F8"/>
+                <constraint firstAttribute="centerY" secondItem="o3F-Uu-anX" secondAttribute="centerY" constant="20" id="w5m-jf-GBd"/>
+                <constraint firstItem="q0B-gJ-DyI" firstAttribute="top" secondItem="o3F-Uu-anX" secondAttribute="bottom" constant="20" id="zrl-US-QWe"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_animation" width="320" height="568"/>
+        <image name="bg_cell_animation_test" width="257" height="325"/>
+        <image name="btn_back" width="6" height="16"/>
+        <image name="btn_spin" width="241" height="53"/>
+        <image name="icon_apppartner" width="114" height="108"/>
+    </resources>
+</document>
